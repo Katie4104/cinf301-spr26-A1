@@ -12,8 +12,9 @@ body {
 
 /* FONTAWESOME1: info-circle */
 /* FONTAWESOME2: utensils */
+/* FONTAWESOME3: images */
+/* FONTAWESOME4: lightbulb */
 
-/* HEADER */
 header {
     background-color: #8b0000;
     color: white;
@@ -26,14 +27,25 @@ header h1 {
     margin: 0;
 }
 
+nav {
+    margin-top: 15px;
+}
+
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 20px;
+    margin: 0 15px;
     font-weight: bold;
+    transition: all 0.3s ease;
+    padding: 5px 10px;
 }
 
-/* MAIN CONTENT SECTIONS */
+nav a:hover {
+    background-color: #ffcc00;
+    color: #8b0000;
+    border-radius: 4px;
+}
+
 main {
     padding: 40px 20px;
 }
@@ -42,7 +54,7 @@ section, article, aside {
     background: white;
     margin: 20px auto;
     padding: 20px;
-    max-width: 800px;
+    max-width: 900px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
@@ -52,7 +64,7 @@ h2 {
     color: #8b0000;
 }
 
-/* REQUIREMENT 1(g): TABLE STYLING */
+/* REQUIREMENT 1(g): TABLE STYLING (ZEBRA STRIPING) */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -62,23 +74,34 @@ table {
 th {
     background-color: #555; /* Dark grey header */
     color: white;
-    padding: 12px;
+    padding: 15px;
 }
 
+/* Zebra striping requirement */
 tr:nth-child(even) {
-    background-color: #f2f2f2; /* Light grey even rows */
+    background-color: #f2f2f2; /* Light grey */
 }
 
 tr:nth-child(odd) {
-    background-color: #ffffff; /* White odd rows */
+    background-color: #ffffff; /* White */
 }
 
 td {
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ddd;
 }
 
-/* IMAGES */
+/* IMAGE GALLERY STYLING */
+#gallery img {
+    width: 28%;
+    min-width: 150px;
+    transition: transform 0.3s ease;
+}
+
+#gallery img:hover {
+    transform: scale(1.05);
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -89,16 +112,11 @@ img {
 footer {
     background: #333;
     color: white;
-    padding: 10px;
+    padding: 15px;
     margin-top: 20px;
 }
-/* Update your existing CSS */
-nav a {
-    transition: all 0.3s ease; /* Professional touch */
-    padding: 5px 10px;
-}
-nav a:hover {
-    background-color: #ffcc00; /* Gold highlight */
-    color: #8b0000;
-    border-radius: 4px;
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
 }
