@@ -1,0 +1,94 @@
+/* GOOGLEFONT1: Roboto */
+/* GOOGLEFONT2: Oswald */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+    color: #333;
+}
+
+/* FONTAWESOME1: info-circle */
+/* FONTAWESOME2: utensils */
+
+/* HEADER */
+header {
+    background-color: #8b0000;
+    color: white;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+/* MAIN CONTENT SECTIONS */
+main {
+    padding: 40px 20px;
+}
+
+section, article, aside {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #8b0000;
+}
+
+/* REQUIREMENT 1(g): TABLE STYLING */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th {
+    background-color: #555; /* Dark grey header */
+    color: white;
+    padding: 12px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light grey even rows */
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff; /* White odd rows */
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* IMAGES */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
