@@ -92,3 +92,8 @@ footer {
     padding: 10px;
     margin-top: 20px;
 }
+/* Update your existing CSS */
+nav a {
+    transition: all 0.3s ease; /* Professional touch */
+    padding: 5px 10px;
+}
