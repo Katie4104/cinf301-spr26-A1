@@ -97,3 +97,8 @@ nav a {
     transition: all 0.3s ease; /* Professional touch */
     padding: 5px 10px;
 }
+nav a:hover {
+    background-color: #ffcc00; /* Gold highlight */
+    color: #8b0000;
+    border-radius: 4px;
+}
