@@ -12,6 +12,8 @@ body {
 
 /* FONTAWESOME1: info-circle */
 /* FONTAWESOME2: utensils */
+/* FONTAWESOME3: images */
+/* FONTAWESOME4: lightbulb */
 
 /* HEADER */
 header {
@@ -62,6 +64,34 @@ table {
 th {
     background-color: #555; /* Dark grey header */
     color: white;
+    padding: 15px;
+}
+
+/* Zebra striping requirement */
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light grey */
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff; /* White */
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+/* IMAGE GALLERY STYLING */
+#gallery img {
+    width: 28%;
+    min-width: 150px;
+    transition: transform 0.3s ease;
+}
+
+#gallery img:hover {
+    transform: scale(1.05);
+}
+
     padding: 12px;
 }
 
@@ -89,6 +119,13 @@ img {
 footer {
     background: #333;
     color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
     padding: 10px;
     margin-top: 20px;
 }
